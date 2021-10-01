@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Input({placeholder, onClick, onBlur, type = "text", name, value, id}) {
+export default function Input({placeholder, onClick, onChange, onBlur, type = "text", name, value, id}) {
   return (
     <React.Fragment>
       <input
@@ -8,6 +8,7 @@ export default function Input({placeholder, onClick, onBlur, type = "text", name
         placeholder={placeholder}
         onClick={onClick}
         onBlur={onBlur}
+        onChange={onChange}
         name={name}
         value={value}
         id={id}
